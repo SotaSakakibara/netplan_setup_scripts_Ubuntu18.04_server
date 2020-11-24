@@ -1,2 +1,4 @@
 # raspberry3_netplan_setup_scripts_Ubuntu18.04_server
 このリポジトリはubuntu18.04環境でraspbarry3のneplan設定を半自動で行えるスクリプトです。設定を打ち込まなければいけないので楽に済ませられるように作っておきたます
+
+## a
