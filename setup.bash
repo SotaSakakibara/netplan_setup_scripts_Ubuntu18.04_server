@@ -12,32 +12,32 @@ echo "network:" >> /etc/netplan/50-cloud-init.yaml
 
 echo "ethernets:" >> /etc/netplan/50-cloud-init.yaml 
 echo "etho0:" >> /etc/netplan/50-cloud-init.yaml
-echo "eth0 address. : \c"
+echo "eth0 address : "
 read eth_adr
 echo "addresses: [$eth_adr]" >> /etc/netplan/50-cloud-init.yaml 
-echo "eth0 dhcp4 true or false. : \c"
+echo "eth0 dhcp4 true or false : "
 read eth_dhcp4
 echo "dhcp4: $eth_dhcp4" >> /etc/netplan/50-cloud-init.yaml
-echo "eth0 optional true or false. : \c"
+echo "eth0 optional true or false : "
 read eth_optional
 echo "optional: $eth_optional" >> /etc/netplan/50-cloud-init.yaml 
 
 echo "wifis:" >> /etc/netplan/50-cloud-init.yaml 
 echo "wlan0:" >> /etc/netplan/50-cloud-init.yaml
-echo "wlan0 address. : \c"
+echo "wlan0 address : "
 read wlan_adr
 echo "addresses: [$wlan_adr]" >> /etc/netplan/50-cloud-init.yaml
-echo "wlan0 dhcp4 true or false. : \c"
+echo "wlan0 dhcp4 true or false : "
 read wlan_dhcp4
 echo "dhcp4: $wlan_dhcp4" >> /etc/netplan/50-cloud-init.yaml
-echo "waln0 optional true of false. : \c"
+echo "waln0 optional true of false : "
 read wlan_optional
 echo "optional: $wlan_optional" >> /etc/netplan/50-cloud-init.yaml 
 echo "access-points:" >> /etc/netplan/50-cloud-init.yaml 
-echo "SSID1 :\c"
+echo "SSID1 :"
 read SSID1
 echo ""$SSID1":" >> /etc/netplan/50-cloud-init.yaml 
-echo "SSID1s password :\c"
+echo "SSID1s password :"
 read SSID1_pass
 echo "password: "$SSID1_pass"" >> /etc/netplan/50-cloud-init.yaml 
 echo "version: 2" >> /etc/netplan/50-cloud-init.yaml 
