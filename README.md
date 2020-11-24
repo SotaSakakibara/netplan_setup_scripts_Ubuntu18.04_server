@@ -4,6 +4,5 @@
 
 ## setup.bashについて
 
-    ```
     sudo ./setup.bash
-    ```
+    
