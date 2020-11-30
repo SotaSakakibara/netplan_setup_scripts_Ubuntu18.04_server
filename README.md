@@ -6,4 +6,14 @@
 ```
 sudo ./setup.bash
 ```
-あとは流れで適材適所打ち込んでもらえばOKです。
+ほとんどが流れで適材適所入力してもらえればOKなのですが、
+最後に出てきた入力画面ではコメントアウトしてある文言の一番下に
+```
+@reboot /home/ubuntu/pimouse_setup/setup.bash
+@reboot /sbin/iwconfig wlan0 power off
+```
+と入力して終了、保存を行ってすべて完了です。
+この文言を入れておかないと
+iwconfig のパワーオフが再起動した際に勝手にオンにされてしまい
+厄介です。
+
